@@ -1,0 +1,28 @@
+.column-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  margin: 75px 0px 0px 0px;
+}
+
+.column {
+  flex: 1;
+}
+
+.left-column {
+  color: #0c0c0c;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bold-text {
+  color: #30f;
+  font-weight: 700;
+}
+
+.underline-text {
+  text-decoration: underline;
+  text-underline-position: under;
+}
