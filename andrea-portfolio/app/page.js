@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.css";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
@@ -18,6 +18,14 @@ export default function Home() {
     setCurrentNews(selectedNews);
     setModalVisible(true);
   };
+
+  useEffect(()=>{
+    const getStaticProps = async () => {
+      const posts = await getAllFilesMetadata()
+      console.log(posts)
+      return { props: {posts} };
+    };
+  },[])
 
   const closeModal = () => setModalVisible(false);
 
@@ -54,7 +62,7 @@ export default function Home() {
         <div className="horizontal-line"></div>
         <Highlights />
         <div className="horizontal-line"></div>
-        <Extracurricular />
+        <Extracurricular openModal={openModal}/>
         <div className="horizontal-line"></div>
         <Contact />
         <div className="horizontal-line"></div>
@@ -64,8 +72,3 @@ export default function Home() {
   );
 }
 
-export const getStaticProps = async () => {
-  const posts = await getAllFilesMetadata()
-  console.log(posts)
-  return { props: {posts} };
-};

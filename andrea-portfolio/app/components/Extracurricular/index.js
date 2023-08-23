@@ -1,7 +1,8 @@
 //create a component called Extracurricular and export it
 import ImageContainer from "./ImageContainer";
 import "./index.css";
-const Extracurricular = () => {
+const Extracurricular = (props) => {
+  const { openModal } = props;
   return (
     <>
       <section id="Extracurricular">
@@ -25,7 +26,7 @@ const Extracurricular = () => {
           </div>
 
           <div className="column" style={{ marginTop: "180px" }}>
-            <ImageContaineer
+            <ImageContainer
               date="2023"
               title="Morelos"
               subtitle="Mentora"

@@ -3,7 +3,7 @@ const ImageContainer = (props) => {
   const { title, subtitle, date, image, openModal } = props;
   return (
     <>
-      <div className="image-container" onClick={openModal(id)}>
+      <div className="image-container" onClick={openModal}>
         <img src={image} alt="Morelos" />
         <div className="overlay">
           <div className="date">{date}</div>
