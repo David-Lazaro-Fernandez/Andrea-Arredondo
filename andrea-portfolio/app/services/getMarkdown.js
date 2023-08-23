@@ -1,15 +1,11 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require('fs');
+const path = require('path');
 const matter = require("gray-matter");
-const {serialize} = require("next-mdx-remote/serialize");
+const { serialize } = require("next-mdx-remote/serialize");
 const root = process.cwd();
 
-console.log(root);
-console.log("HELOOO");
 
-const getFiles = () => {
-  fs.readdirSync(path.join(process.cwd(), "../content"));
-};
+const getFiles = () => fs.readdirSync(path.join(root, "../content"));
 
 const getFileBySlug = async ({ slug }) => {
   const mdxSource = fs.readFileSync(

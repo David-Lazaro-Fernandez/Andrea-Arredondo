@@ -23,14 +23,14 @@ export default function Home() {
     const getStaticProps = async () => {
       const posts = await getAllFilesMetadata()
       console.log(posts)
-      return { props: {posts} };
     };
+    getStaticProps()
   },[])
 
   const closeModal = () => setModalVisible(false);
 
   return (
-    <div class="background">
+    <div className="background">
       <main>
         <nav className="navbar">
           <div>
