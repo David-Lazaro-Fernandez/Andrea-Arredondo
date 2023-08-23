@@ -1,9 +1,22 @@
+import { useState } from "react";
 import "./index.css";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
 import Tools from "./components/Tools";
 import Highlights from "./components/Highlights";
+import Extracurricular from "./components/Extracurricular";
 export default function Home() {
+  const [isModalVisible, setModalVisible] = useState(false);
+  const [currentNews, setCurrentNews] = useState(null);
+
+  const openModal = (newsId) => {
+    const selectedNews = newsData.find((news) => news.id === newsId);
+    setCurrentNews(selectedNews);
+    setModalVisible(true);
+  };
+
+  const closeModal = () => setModalVisible(false);
+
   return (
     <div class="background">
       <main>
@@ -33,110 +46,13 @@ export default function Home() {
         <div className="horizontal-line"></div>
         <Work />
         <div className="horizontal-line"></div>
-       <Tools />
+        <Tools />
         <div className="horizontal-line"></div>
-       <Highlights />
+        <Highlights />
         <div className="horizontal-line"></div>
-        <section id="Extracurricular">
-          <div className="section-title">Extracurricular Activities</div>
-          <div className="gallery-container">
-            <div className="column" style={{ marginTop: "40px" }}>
-              <div className="image-container" onClick="openModal('modal1')">
-                <img src="./img/morelos.jpg" alt="Morelos" />
-                <div className="overlay">
-                  <div className="date">2023</div>
-                  <div className="overlay-title">Morelos</div>
-                  <div className="overlay-sub">Mentora</div>
-                </div>
-              </div>
-
-              <div className="image-container" onclick="openModal('modal1')">
-                <img src="./img/clubes2.png" alt="Clubes 2" />
-                <div className="overlay">
-                  <div className="date">2023</div>
-                  <div className="overlay-title">Morelos</div>
-                  <div className="overlay-sub">Mentora</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="column" style={{ marginTop: "180px" }}>
-              <div className="image-container" onclick="openModal('modal1')">
-                <img src="./img/Tigre2.png" alt="Tigre" />
-                <div className="overlay">
-                  <div className="date">2023</div>
-                  <div className="overlay-title">Morelos</div>
-                  <div className="overlay-sub">Mentora</div>
-                </div>
-              </div>
-
-              <div className="image-container" onclick="openModal('modal1')">
-                <img
-                  src="./img/RIIAA.jpg"
-                  alt="RIIAA"
-                  style={{ objectPosition: "-90px" }}
-                />
-                <div className="overlay">
-                  <div className="date">2023</div>
-                  <div className="overlay-title">Morelos</div>
-                  <div className="overlay-sub">Mentora</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="column" style={{ marginTop: "0px" }}>
-              <div className="image-container" onclick="openModal('modal1')">
-                <img src="./img/clubes.jpg" alt="Clubes" />
-                <div className="overlay">
-                  <div className="date">2023</div>
-                  <div className="overlay-title">Morelos</div>
-                  <div className="overlay-sub">Mentora</div>
-                </div>
-              </div>
-
-              <div className="image-container" onclick="openModal('modal1')">
-                <img
-                  src="./img/she.jpg"
-                  alt="She plus plus"
-                  style={{ objectPosition: "left" }}
-                />
-                <div className="overlay">
-                  <div className="date">2022</div>
-                  <div className="overlay-title">
-                    She++ 5th Edition: Empowering Future Role Models in
-                    Programming and Technology at Tec de Monterrey, Campus León
-                  </div>
-                  <div className="overlay-sub">Speaker</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Extracurricular />
         <div className="horizontal-line"></div>
-        <section id="Contact">
-          <div className="contact-wrapper">
-            <h1>SAY HOLA</h1>
-            <h2>Do you want to build awesome things?</h2>
-            <div className="free">
-              <p>
-                Feel free to send me an email to{" "}
-                <a href="mailto:hiandrea@gmail.com">hiandrea@gmail.com</a>{" "}
-              </p>
-              <p>or</p>
-              <p>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D">
-                  (click here)
-                </a>{" "}
-                to send me a DM with your idea
-              </p>
-              <p>or</p>
-              <p>
-                if you just want to talk use my{" "}
-                <a href="https://calendly.com">calendly</a>.
-              </p>
-            </div>
-          </div>
-        </section>
+       
         <div className="horizontal-line"></div>
         <div id="modal1" className="modal">
           <div className="modal-content">
