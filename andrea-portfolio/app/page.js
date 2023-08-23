@@ -8,7 +8,6 @@ import Highlights from "./components/Highlights";
 import Extracurricular from "./components/Extracurricular";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { getAllFilesMetadata } from "./services/getMarkdown";
 export default function Home() {
   const [isModalVisible, setModalVisible] = useState(false);
   const [currentNews, setCurrentNews] = useState(null);
@@ -19,13 +18,6 @@ export default function Home() {
     setModalVisible(true);
   };
 
-  useEffect(()=>{
-    const getStaticProps = async () => {
-      const posts = await getAllFilesMetadata()
-      console.log(posts)
-    };
-    getStaticProps()
-  },[])
 
   const closeModal = () => setModalVisible(false);
 
@@ -71,4 +63,3 @@ export default function Home() {
     </div>
   );
 }
-

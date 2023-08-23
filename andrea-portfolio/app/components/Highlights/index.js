@@ -1,8 +1,16 @@
 import Category from "./Category";
 import "./index.css";
+import {getAllFilesMetadata} from '../../services/getMarkdown'
+
+// const files = getAllFilesMetadata();
 const Highlights = () => {
   return (
     <>
+      {/* {files.map((file) => {
+        <div>
+          {file}
+        </div>
+      })} */}
       <section id="Highlights">
         <div className="section-title">Highlights</div>
         <div className="carousel-container">
