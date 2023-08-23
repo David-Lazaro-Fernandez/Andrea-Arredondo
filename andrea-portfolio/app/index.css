@@ -89,33 +89,3 @@ main {
   background-color: black;
   margin: 100px 0px 50px 0px;
 }
-
-
-
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px 100px 0px 100px;
-  padding: 20px 20px 100px 20px;
-}
-
-.footer-logo img {
-  width: 75px;
-  height: 75px; /* Puedes ajustar el tamaño según tus necesidades */
-}
-
-.footer-links {
-  display: flex;
-  gap: 20px; /* Espacio entre los enlaces */
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: #0c0c0c;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
