@@ -2,7 +2,7 @@ import Category from "./Category";
 import "./index.css";
 import {getAllFilesMetadata} from '../../services/getMarkdown'
 
-// const files = getAllFilesMetadata();
+const files = getAllFilesMetadata();
 const Highlights = () => {
   return (
     <>
