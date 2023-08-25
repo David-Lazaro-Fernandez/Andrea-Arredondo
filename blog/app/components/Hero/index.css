@@ -5,16 +5,13 @@
   margin: 75px 0px 0px 0px;
 }
 
-.column {
-  flex: 1;
-}
-
 .left-column {
   color: #0c0c0c;
-  font-size: 40px;
+  font-size: 3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  width: 60%;
 }
 
 .bold-text {
@@ -25,4 +22,25 @@
 .underline-text {
   text-decoration: underline;
   text-underline-position: under;
+}
+
+@media screen and (min-width:1440px) {
+  .left-column {
+    font-size: 2.5rem;
+  }
+  
+}
+
+@media screen and (min-width:1024px) and (max-width:1439px) {
+  .left-column {
+    font-size: 2rem;
+  }
+  
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+  .left-column {
+    font-size: 1rem;
+  }
+  
 }
