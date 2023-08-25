@@ -28,7 +28,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({post}) =>{
   return (
     <>
       <div className="image-container" onClick={()=>openModal(currentPost)}>
-        <Image src={post.title_image} width={300} height={600} alt="Morelos" />
+        <Image src={`/${post.title_image}`} width={300} height={600} alt="Morelos" />
         <div className="overlay">
           <div className="date">{post.date}</div>
           <div className="overlay-title">{post.title}</div>
