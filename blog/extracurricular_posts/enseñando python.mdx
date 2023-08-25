@@ -1,0 +1,94 @@
+---
+title: 'Enseñando Python A Proximos Cientificos' 
+postType: 'Extracurricular'
+subtitle: 'CdCMX'
+date: '2023'
+org: 'CdCMX'
+category: 'Startup' 
+title_image: python2.jpg
+images: 
+    - python1.jpg
+    - python2.jpg
+    - python3.jpeg
+    - python4.jpg
+---
+
+
+**Aprendiendo a usar Pandas**
+
+Pandas es una de las bibliotecas más populares de Python, destinada al análisis y manipulación de datos. Derivado de "PANel DAtaS", esta herramienta es esencial para cualquier persona que trabaje en análisis de datos, ciencia de datos o áreas relacionadas en Python.
+
+**¿Qué es Pandas?**
+
+Pandas proporciona estructuras de datos poderosas y flexibles, como `DataFrame` y `Series`, que facilitan la manipulación y el análisis de datos. Con Pandas, puedes hacer cosas como:
+
+- Cargar datos de diferentes formatos (CSV, Excel, SQL, etc.).
+- Limpiar y preprocesar datos.
+- Realizar análisis estadísticos básicos.
+- Transformar conjuntos de datos.
+- Visualizar datos con gráficas.
+
+**Primeros pasos con Pandas**
+
+Para comenzar con Pandas, primero debes instalarlo. Puedes hacerlo con pip:
+
+```bash showLineNumbers title="bash" {1}
+pip install pandas
+```
+
+Una vez instalado, puedes importar Pandas en tu script o notebook:
+
+```python showLineNumbers title="python" {1}
+import pandas as pd
+```
+
+**Estructuras de Datos en Pandas**
+
+Las dos estructuras principales en Pandas son:
+
+1. **Series**: Una matriz unidimensional que puede contener cualquier tipo de datos.
+2. **DataFrame**: Una estructura bidimensional, similar a una tabla en una base de datos, una hoja de cálculo de Excel o una tabla en R.
+
+**Ejemplo de Series:**
+
+```python showLineNumbers title="python" {1}
+serie = pd.Series([1, 2, 3, 4, 5])
+print(serie)
+```
+
+**Ejemplo de DataFrame:**
+
+```python showLineNumbers title="python" {7}
+data = {
+    'Nombres': ['Ana', 'Luis', 'Marta', 'Juan'],
+    'Edades': [25, 30, 22, 29],
+    'Ciudad': ['Madrid', 'Barcelona', 'Valencia', 'Sevilla']
+}
+df = pd.DataFrame(data)
+print(df)
+```
+
+**Cargando Datos Externos**
+
+Una de las características más potentes de Pandas es su capacidad para cargar datos de diversos formatos. Por ejemplo, para cargar un archivo CSV:
+
+```python showLineNumbers title="python" {1}
+data = pd.read_csv('ruta/del/archivo.csv')
+```
+
+**Funciones Básicas**
+
+Una vez que tienes tus datos en un DataFrame, hay varias funciones que puedes usar para explorarlos:
+
+- `head()`: muestra las primeras filas del DataFrame.
+- `tail()`: muestra las últimas filas.
+- `describe()`: ofrece un resumen estadístico de las columnas numéricas.
+- `info()`: proporciona un resumen de las columnas, los datos no nulos y los tipos de datos.
+
+**Conclusión**
+
+Pandas es una herramienta increíblemente poderosa para cualquiera que trabaje con datos en Python. Si bien este artículo ofrece una breve introducción, hay mucho más por descubrir. Te animo a explorar la documentación oficial, tutoriales y cursos para aprender aún más sobre lo que Pandas tiene para ofrecer.
+
+---
+
+Espero que este artículo te sirva como punto de partida para introducir a otros al mundo de Pandas. ¡Buena suerte con tu contenido!

@@ -6,7 +6,7 @@ import Work from "./components/Work";
 import Tools from "./components/Tools";
 import Highlights from "./components/Highlights";
 import Extracurricular from "./components/Extracurricular";
-import Contact from "./components/Contact";
+import Contact from "../../blog/app/components/Contact";
 import Footer from "./components/Footer";
 export default function Home() {
   const [isModalVisible, setModalVisible] = useState(false);
