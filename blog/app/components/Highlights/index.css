@@ -27,10 +27,8 @@
   overflow: hidden;
 }
 
-.card-image img {
-  width: 100%;
+.card-image img { 
   object-fit: cover;
-  height: 300px;
 }
 
 .category-box {

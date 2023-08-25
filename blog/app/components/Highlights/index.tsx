@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 import Modal from "../Modal"
 import Category from "./Category"
 import "./index.css"
@@ -23,7 +24,7 @@ const HighlightCard = (post: AndreaPost) => {
     <div className="card" onClick={() => openModal(post)}>
       <div className="card-image">
         <Category type={post.category} title={post.category} />
-        <img src={post.title_image} alt={post.title} />
+        <Image src={post.title_image} width={400} height={300} alt={post.title} />
       </div>
       <div className="card-content">
         <div className="highlight_title">

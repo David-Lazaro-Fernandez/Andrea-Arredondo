@@ -1,7 +1,9 @@
 import "./index.css";
 import { useState } from "react";
 import { AndreaPost } from "contentlayer/generated"
+import Image from 'next/image'
 import Modal from '../Modal'
+
 
 interface ImageContainerProps{
   post: AndreaPost
@@ -26,7 +28,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({post}) =>{
   return (
     <>
       <div className="image-container" onClick={()=>openModal(currentPost)}>
-        <img src={post.title_image} alt="Morelos" />
+        <Image src={post.title_image} width={300} height={600} alt="Morelos" />
         <div className="overlay">
           <div className="date">{post.date}</div>
           <div className="overlay-title">{post.title}</div>

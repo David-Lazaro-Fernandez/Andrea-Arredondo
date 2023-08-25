@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import './index.css'
 const Work = () => {
   return (
@@ -6,7 +7,7 @@ const Work = () => {
         <div className="section-title">Work</div>
         <div className="container">
           <div className="company-container-blue">
-            <img className="company" src="/img/BBVA.png" alt="Logo" />
+            <Image className="company" width={100} height={100} src="/img/BBVA.png" alt="Logo" />
           </div>
           <div className="info-column">
             <div className="title">BBVA</div>
@@ -19,7 +20,7 @@ const Work = () => {
         </div>
         <div className="container">
           <div className="company-container">
-            <img className="company" src="/img/IBM.svg" alt="Logo" />
+            <Image className="company" width={100} height={100} src="/img/IBM.svg" alt="Logo" />
           </div>
           <div className="info-column">
             <div className="title">IBM</div>
@@ -32,7 +33,7 @@ const Work = () => {
         </div>
         <div className="container">
           <div className="company-container">
-            <img className="company" src="/img/DATALOOP.png" alt="Logo" />
+            <Image className="company" width={100} height={100} src="/img/DATALOOP.png" alt="Logo" />
           </div>
           <div className="info-column">
             <div className="title">Data Loop</div>

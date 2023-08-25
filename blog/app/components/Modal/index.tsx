@@ -1,7 +1,7 @@
 import './index.css'
 import { AndreaPost } from '.contentlayer/generated';
 import { useMDXComponent } from 'next-contentlayer/hooks';
-
+import Image from 'next/image'
 interface ModalProps {
   post: AndreaPost;
   isVisible: boolean;
@@ -54,8 +54,8 @@ const Modal: React.FC<ModalProps> = ({ post, isVisible, setIsVisible }) => {
             <div className="modal-gal">
               {post.images.map((img, index) => (
                 <div key={index} className={`modal-gal-${index + 1}`} >
-                  <img src={`/${img}`} alt={`Imagen ${index + 1}`} />
-                  {/* <Image src={`/${img}`} alt={`Imagen ${index + 1}`} width={indexImageSizes[index].width} height={indexImageSizes[index].height} /> */}
+                 
+                  <Image src={`/${img}`} alt={`Imagen ${index + 1}`} width={indexImageSizes[index].width} height={indexImageSizes[index].height} />
                 </div>
               ))}
             </div>
