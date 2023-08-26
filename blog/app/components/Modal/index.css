@@ -9,7 +9,6 @@
   overflow-y: scroll;
 }
 
-
 .modal-content {
   background-color: white;
   width: 80%;
@@ -39,7 +38,7 @@
 
 .back:hover {
   background-color: #0c0c0c;
-  color: white
+  color: white;
 }
 
 article {
@@ -124,11 +123,9 @@ article {
   height: 132px;
 }
 
-
 div[data-rehype-pretty-code-fragment] {
   border-radius: 10px;
 }
-
 
 div[data-rehype-pretty-code-fragment] pre {
   overflow-x: auto;
@@ -154,12 +151,11 @@ ol {
   color: #363636;
 }
 
-
 code {
   counter-reset: line;
 }
 
-code>[data-line]::before {
+code > [data-line]::before {
   counter-increment: line;
   content: counter(line);
 
@@ -171,14 +167,66 @@ code>[data-line]::before {
   color: gray;
 }
 
-code[data-line-numbers-max-digits='2']>[data-line]::before {
+code[data-line-numbers-max-digits="2"] > [data-line]::before {
   width: 2rem;
 }
 
-code[data-line-numbers-max-digits='3']>[data-line]::before {
+code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
 
-pre>code {
+pre > code {
   display: grid;
+}
+
+/*Lap L*/
+@media screen and (min-width: 1440px) {
+}
+
+/*Lap*/
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+}
+
+/*Phone*/
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .modal-content {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 300px 0px;
+  }
+
+  .back,
+  article,
+  .modal-h1 {
+    margin: 0px;
+    max-width: 300px;
+    margin: 20px 0px 0px 0px;
+  }
+  .modal-h1 {
+    font-size: 2rem;
+    margin: 20px 0px 20px 0px;
+  }
+  .modal-gal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-gal-1,
+  .modal-gal-2,
+  .modal-gal-3,
+  .modal-gal-4,
+  .modal-gal-1 img,
+  .modal-gal-2 img,
+  .modal-gal-3 img,
+  .modal-gal-4 img {
+    width: 100%;
+    height: 200px;
+  }
+
+  article {
+    margin: 0px;
+  }
 }

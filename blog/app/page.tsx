@@ -19,17 +19,17 @@ export default function Home() {
             </div>
             <ul className="navbar-links">
               <li>
-                <a href="#">
+                <a href="https://github.com/Andrea-Monserrat">
                   <Image width={50} height={50} alt="mail icon" src="/img/github.png" />{" "}
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://twitter.com/AndreMonserratt">
                   <Image width={50} height={50} alt="mail icon" src="/img/x.png" />{" "}
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="mailto:andrea.monserrat.ar@gmail.com">
                   <Image width={50} height={50} alt="mail icon" src="/img/mail.png" />{" "}
                 </a>
               </li>

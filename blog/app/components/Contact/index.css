@@ -54,7 +54,16 @@
 
 /*Lap*/
 @media screen and (min-width: 1024px) and (max-width: 1439px){
- 
+  .contact-wrapper h1{
+    font-size: 8rem;
+  }
+  .contact-wrapper h2{
+    font-size: 2.2rem;
+  }
+
+  .contact-wrapper p, .contact-wrapper p a{
+    font-size: 1.4rem;
+  }
 }
 
 /*Phone*/

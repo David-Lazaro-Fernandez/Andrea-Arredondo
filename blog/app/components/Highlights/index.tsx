@@ -28,7 +28,7 @@ const HighlightCard = (post: AndreaPost) => {
       </div>
       <div className="card-content">
         <div className="highlight_title">
-          {post.title.length > 35 ? `${post.title.slice(0, 40)}...` : post.title}
+          {post.title.length > 35 ? `${post.title.slice(0, 48)}...` : post.title}
         </div>
         <div className="subtitle">{post.subtitle}</div>
       </div>

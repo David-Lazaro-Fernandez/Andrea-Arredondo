@@ -98,7 +98,9 @@
 
 /* Lap */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  
+  .position{
+    text-align:left;
+  } 
 }
 
 /* Phone */

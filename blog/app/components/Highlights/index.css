@@ -69,7 +69,9 @@
 
 /*Lap*/
 @media screen and (min-width: 1024px) and (max-width: 1439px){
- 
+  .highlight_title{
+    font-size: 1.3rem;
+  } 
 }
 
 /*Phone*/

@@ -9,6 +9,7 @@
 }
 
 .image-container img {
+  width: 100%;
   margin-bottom: 20px;
   object-fit: cover;
   transition: 0.3s;
@@ -23,7 +24,7 @@
   background: rgba(0, 0, 0, 0.75);
   opacity: 0;
   transition: 0.3s;
-  width: 300px;
+  width: 100%;
   height: 600px;
   cursor: pointer;
 }
@@ -50,6 +51,7 @@
   font-size: 26px;
   font-weight: 800;
   position: absolute;
+  width: 90%;
   bottom: 80px;
   left: 20px;
 }
@@ -64,26 +66,58 @@
 }
 
 /*Lap L*/
-@media screen and (min-width: 1440px){
- 
+@media screen and (min-width: 1440px) {
+  .gallery-container{
+    justify-content: center;
+    gap: 80px;
+  }
+  .image-container {
+    width: 350px;
+  }
+
+  .overlay {
+    width: 350px;
+  }
 }
 
 /*Lap*/
-@media screen and (min-width: 1024px) and (max-width: 1439px){
- 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .gallery-container{
+    justify-content: center;
+    gap: 25px;
+  }
+  .image-container {
+    width: 250px;
+  }
+
+  .overlay {
+    width: 250px;
+  }
+
+  .image-container:hover {
+    transform: rotate(3deg);
+  }
+
+  .overlay-title{
+    font-size: 1.3rem;
+  }
+
 }
 
 /*Phone*/
-@media screen and (min-width: 320px) and (max-width: 425px){
-  .gallery-container{
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .gallery-container {
     flex-direction: column;
   }
 
-  .image-container .overlay{
+  .image-container .overlay {
     opacity: 1;
   }
-  
-  .column{
+
+  .column {
     margin-top: 10px !important;
+  }
+  .overlay-title{
+    font-size: 1.5rem;
   }
 }
