@@ -96,14 +96,31 @@
   color: #0c0c0c !important;
 }
 
+/*Lap L*/
 @media screen and (min-width: 1440px){
   .parent div{
     font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 1024px){
+/*Lap*/
+@media screen and (min-width: 1024px) and (max-width: 1439px){
   .parent div{
     font-size: 1.6rem;
+  }
+}
+
+/*Phone*/
+@media screen and (min-width: 320px) and (max-width: 425px){
+  .parent div{
+    font-size: 1rem;
+    margin: 0px 0px 0px 0px;
+    
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 15px;
   }
 }

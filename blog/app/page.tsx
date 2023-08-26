@@ -47,9 +47,10 @@ export default function Home() {
           <div className="horizontal-line"></div>
           <Contact />
           <div className="horizontal-line"></div>
+          <Footer />
         </div>
+        
       </main>
-      <Footer />
     </div>
   )
 }
