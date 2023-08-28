@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Andrea Arredondo",
     description: "Andrea Arredondo personal website",
-    url: "https://andrea-arredondo.vercel.app/",
+    url: "/openGraph Image.png",
     siteName: "Andrea Arredondo",
     type: "website",
     images: [
