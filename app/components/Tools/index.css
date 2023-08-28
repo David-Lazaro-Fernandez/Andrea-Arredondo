@@ -96,8 +96,15 @@
   color: #0c0c0c !important;
 }
 
+@media screen and (min-width: 1900px) {
+  .parent div{
+    font-size: 2rem;
+    height: 90px;
+  }
+}
+
 /*Lap L*/
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440px) and (max-width: 1899px){
   .parent div{
     font-size: 1.5rem;
   }

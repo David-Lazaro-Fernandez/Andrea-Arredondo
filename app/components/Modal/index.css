@@ -88,37 +88,28 @@ article {
   height: 300px;
 }
 
-.modal-gal-1 img {
-  width: 300px;
-  height: 296px;
+.modal-gal-1 img,
+.modal-gal-2 img,
+.modal-gal-3 img,
+.modal-gal-4 img {
+  width: 100%;
+  height: 100%;
 }
 
 .modal-gal-2 {
   grid-area: 1 / 2 / 2 / 4;
-  width: 300px;
-}
-
-.modal-gal-2 img {
   width: 500px;
   height: 150px;
 }
 
 .modal-gal-3 {
   grid-area: 2 / 2 / 3 / 3;
-  width: 250px;
-}
-
-.modal-gal-3 img {
   width: 235px;
   height: 132px;
 }
 
 .modal-gal-4 {
   grid-area: 2 / 3 / 3 / 4;
-  width: 250px;
-}
-
-.modal-gal-4 img {
   width: 240px;
   height: 132px;
 }
@@ -179,12 +170,89 @@ pre > code {
   display: grid;
 }
 
+/*FHD*/
+@media screen and (min-width: 1900px) {
+  .back {
+    font-size: 2rem;
+  }
+  .modal-h1 {
+    font-size: 3.6rem;
+  }
+
+  .modal-gal-1 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .modal-gal-2 {
+    width: 800px;
+    height: 240px;
+  }
+  .modal-gal-3,
+  .modal-gal-4 {
+    width: 395px;
+    height: 245px;
+  }
+  .description p {
+    font-size: 1.8rem;
+  }
+}
+
 /*Lap L*/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1899px) {
+  .back {
+    font-size: 1.6rem;
+  }
+  .modal-h1 {
+    font-size: 2.6rem;
+  }
+
+  .modal-gal-1 {
+    width: 400px;
+    height: 400px;
+  }
+
+  .modal-gal-2 {
+    width: 500px;
+    height: 240px;
+  }
+  .modal-gal-3,
+  .modal-gal-4 {
+    width: 245px;
+    height: 150px;
+  }
+  .description p {
+    font-size: 1.5rem;
+  }
 }
 
 /*Lap*/
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .back {
+    font-size: 1.4rem;
+  }
+  .modal-h1 {
+    font-size: 2.4rem;
+  }
+
+  .modal-gal-1 {
+    width: 250px;
+    height: 250px;
+  }
+
+  .modal-gal-2 {
+    width: 380px;
+    height: 125px;
+  }
+  .modal-gal-3,
+  .modal-gal-4 {
+    width: 185px;
+    height: 115px;
+  }
+
+  .description p {
+    font-size: 1.3rem;
+  }
 }
 
 /*Phone*/
