@@ -71,7 +71,7 @@ article {
 
 .modal-gal {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -98,7 +98,7 @@ article {
 
 .modal-gal-2 {
   grid-area: 1 / 2 / 2 / 4;
-  width: 500px;
+  width: 100%;
   height: 150px;
 }
 
@@ -110,7 +110,7 @@ article {
 
 .modal-gal-4 {
   grid-area: 2 / 3 / 3 / 4;
-  width: 240px;
+  width: 100%;
   height: 132px;
 }
 
@@ -185,12 +185,18 @@ pre > code {
   }
 
   .modal-gal-2 {
-    width: 800px;
+    width: 100%;
     height: 240px;
+  }
+
+  .modal-gal-3{
+    width: 395px;
+  }
+  .modal-gal-4{
+    width: 100%;
   }
   .modal-gal-3,
   .modal-gal-4 {
-    width: 395px;
     height: 245px;
   }
   .description p {
@@ -199,12 +205,12 @@ pre > code {
 }
 
 /*Lap L*/
-@media screen and (min-width: 1440px) and (max-width: 1899px) {
+@media screen and (min-width: 1300px) and (max-width: 1899px) {
   .back {
     font-size: 1.6rem;
   }
   .modal-h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 
   .modal-gal-1 {
@@ -213,26 +219,32 @@ pre > code {
   }
 
   .modal-gal-2 {
-    width: 500px;
+    width: 100%;
     height: 240px;
+  }
+  .modal-gal-3{
+    width: 245px;
+  }
+  .modal-gal-4 {
+    width: 100%;
   }
   .modal-gal-3,
   .modal-gal-4 {
-    width: 245px;
     height: 150px;
   }
+
   .description p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 /*Lap*/
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
   .back {
     font-size: 1.4rem;
   }
   .modal-h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 
   .modal-gal-1 {
@@ -241,12 +253,10 @@ pre > code {
   }
 
   .modal-gal-2 {
-    width: 380px;
     height: 125px;
   }
   .modal-gal-3,
   .modal-gal-4 {
-    width: 185px;
     height: 115px;
   }
 
