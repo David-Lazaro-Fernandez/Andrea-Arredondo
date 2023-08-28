@@ -32,7 +32,7 @@ const HighlightCard = (post: AndreaPost) => {
         </div>
         <div className="subtitle">{post.subtitle}</div>
       </div>
-      {isVisible ? <Modal post={currentPost} isVisible={isVisible} setIsVisible={setIsVisible} /> : null}
+      <Modal post={currentPost} isVisible={isVisible} setIsVisible={setIsVisible} />
     </div>
   )
 }

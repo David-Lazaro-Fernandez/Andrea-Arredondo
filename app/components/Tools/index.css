@@ -1,3 +1,77 @@
+.title-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.section-buttons{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 20px 0px 0px 0px;
+}
+
+.button-1{
+  background-color: #3300FF;
+  border: solid #3300FF 1px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-1:hover{
+  background-color: #fff;
+  color: #0c0c0c;
+  border: 1px solid #0c0c0c;
+}
+
+.button-1:hover .circle{
+  background-color: #3300FF;  
+}
+
+.button-2{
+  background-color: #FF00C7;
+  border: solid #FF00C7 1px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-2:hover{
+  background-color: #fff;
+  color: #0c0c0c;
+  border: 1px solid #0c0c0c;
+}
+.button-2:hover .circle{
+  background-color: #FF00C7;  
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.active .circle {
+  opacity: 1;
+}
+
 .parent {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -94,6 +168,35 @@
   width: 70%;
   background-color: #fdfc01 !important;
   color: #0c0c0c !important;
+}
+
+.skill-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.skill-wrapper div{
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 268px;
+  background-color: #0c0c0c;
+}
+
+.content {
+  opacity: 0;
+  transition: opacity 0.5s;
+  max-height: 268px;
+}
+
+.content.active {
+  opacity: 1;
+}
+
+.content.unactive {
+  max-height: 0;
+  transition: 0s;
 }
 
 @media screen and (min-width: 1900px) {
