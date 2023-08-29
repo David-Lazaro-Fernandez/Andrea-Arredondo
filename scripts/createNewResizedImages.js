@@ -1,12 +1,12 @@
 const fs = require("fs");
 const sharp = require("sharp");
-
+const path = require("path");
 // Leer el contenido del archivo .mdx
-const postFiles = fs.readdirSync("../posts");
-const extraPostsFiles = fs.readdirSync("../extracurricular_posts");
+const postFiles = fs.readdirSync("./posts");
+const extraPostsFiles = fs.readdirSync("./extracurricular_posts");
 
 postFiles.forEach((postFile) => {
-  const content = fs.readFileSync(`../posts/${postFile}`, "utf-8");
+  const content = fs.readFileSync(`./posts/${postFile}`, "utf-8");
 
   // Extraer las referencias a las imágenes
   const images = (
@@ -18,8 +18,8 @@ postFiles.forEach((postFile) => {
   console.log(images);
 
   images.forEach((image) => {
-    const inputPath = `../public/${image}`;
-    const outputPath = `../public/blured-${image}`;
+    const inputPath = `./public/${image}`;
+    const outputPath = `./public/blured-${image}`;
     sharp(inputPath)
       .resize(10) // Cambia este valor según el tamaño deseado
       .toFile(outputPath, (err, info) => {
@@ -38,7 +38,7 @@ postFiles.forEach((postFile) => {
 });
 
 extraPostsFiles.forEach((postFile) => {
-  const content = fs.readFileSync(`../extracurricular_posts/${postFile}`, "utf-8");
+  const content = fs.readFileSync(`./extracurricular_posts/${postFile}`, "utf-8");
 
   // Extraer las referencias a las imágenes
   const images = (
@@ -50,8 +50,8 @@ extraPostsFiles.forEach((postFile) => {
   console.log(images);
 
   images.forEach((image) => {
-    const inputPath = `../public/${image}`;
-    const outputPath = `../public/blured-${image}`;
+    const inputPath = `./public/${image}`;
+    const outputPath = `./public/blured-${image}`;
     sharp(inputPath)
       .resize(10) // Cambia este valor según el tamaño deseado
       .toFile(outputPath, (err, info) => {
