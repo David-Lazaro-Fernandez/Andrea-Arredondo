@@ -66,7 +66,7 @@ const Modal: React.FC<ModalProps> = ({ post, isVisible, setIsVisible }) => {
                   width={indexImageSizes[index].width}
                   height={indexImageSizes[index].height}
                   placeholder="blur"
-                  blurDataURL={`/${img}`}
+                  blurDataURL={`/blured-${img}`}
                 />
               </div>
             ))}

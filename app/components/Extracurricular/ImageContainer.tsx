@@ -35,7 +35,7 @@ const ImageContainer: React.FC<ImageContainerProps> = ({post}) =>{
           <div className="overlay-sub">{post.subtitle}</div>
         </div>
       </div>
-      {isVisible ? <Modal post={currentPost} isVisible={isVisible} setIsVisible={setIsVisible} /> : null}
+      <Modal post={currentPost} isVisible={isVisible} setIsVisible={setIsVisible} />
     </>
   );
 };
