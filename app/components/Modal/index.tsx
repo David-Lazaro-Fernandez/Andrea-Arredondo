@@ -59,7 +59,7 @@ const Modal: React.FC<ModalProps> = ({ post, isVisible, setIsVisible }) => {
       onKeyDown={(e) => handleKeyDown(e)}
     >
       <div className="modal-content" onClick={stopPropagation}>
-        <button className="back" onClick={() => setIsVisible(false)}>
+        <button className="back" aria-label="Close Modal" onClick={() => setIsVisible(false)}>
           Back
         </button>
         <article>

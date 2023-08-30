@@ -18,12 +18,14 @@ const Tools = () => {
             <button
               className={`button-1 ${active === 1 ? "active" : ""}`}
               onClick={() => setActive(1)}
+              aria-label="See the tools I use"
             >
               <div className="circle"></div>
             </button>
             <button
               className={`button-2 ${active === 2 ? "active" : ""}`}
               onClick={() => setActive(2)}
+              aria-label="See my skills"
             >
               <div className="circle"></div>
             </button>

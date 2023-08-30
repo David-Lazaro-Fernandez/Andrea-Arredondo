@@ -35,6 +35,8 @@ const ImageContainer: React.FC<ImageContainerProps> = ({ post }) => {
         onClick={() => openModal(currentPost)}
         onKeyDown={(e) => handleKeyDown(e, post)}
         tabIndex={0}
+        role="button"
+        aria-label={`Open modal for ${post.title}`}
       >
         <Image
           src={`/${post.title_image}`}

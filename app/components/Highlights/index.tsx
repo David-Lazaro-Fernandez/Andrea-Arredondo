@@ -32,6 +32,7 @@ const HighlightCard = (post: AndreaPost) => {
       className="card"
       tabIndex={0}
       role="button"
+      aria-label={`Open modal for ${post.title}`}
       onClick={() => openModal(post)}
       onKeyDown={(e) => handleKeyDown(e, post)}
     >
