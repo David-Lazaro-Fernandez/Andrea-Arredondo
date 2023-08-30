@@ -14,7 +14,7 @@ interface ModalProps {
 const Modal: React.FC<ModalProps> = ({ post, isVisible, setIsVisible }) => {
   // Función para cerrar el modal
   const MDXContent = useMDXComponent(post.body.code);
-  
+
   const closeModal = () => {
     setIsVisible(false);
   };
@@ -24,6 +24,12 @@ const Modal: React.FC<ModalProps> = ({ post, isVisible, setIsVisible }) => {
     event: React.MouseEvent<HTMLDivElement, MouseEvent>
   ) => {
     event.stopPropagation();
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
   };
 
   type imageSizes = { [key: number]: { height: number; width: number } };
@@ -50,6 +56,7 @@ const Modal: React.FC<ModalProps> = ({ post, isVisible, setIsVisible }) => {
     <div
       className={isVisible ? "modal slide-in" : "modal initial"}
       onClick={closeModal}
+      onKeyDown={(e) => handleKeyDown(e)}
     >
       <div className="modal-content" onClick={stopPropagation}>
         <button className="back" onClick={() => setIsVisible(false)}>

@@ -24,6 +24,12 @@
   cursor:pointer;
 }
 
+.card:focus {
+  outline: none;
+  border:solid 2px #0c0c0c;  /* o cualquier otro estilo que desees */
+  transition: 0s;
+}
+
 .card-image {
   position: relative;
   overflow: hidden;
